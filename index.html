@@ -53,7 +53,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">DistillNeRF: Perceiving 3D Scenes from Single-Glance Images by Distilling Neural Fields and Foundation Model Features</h1>
+          <h1 class="title is-1 publication-title">DistillNeRF: Perceiving 3D Scenes from Single-Glance Images by <br> Distilling Neural Fields and Foundation Model Features</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
                 <a href="https://scholar.google.com.hk/citations?user=HEzCWisAAAAJ&hl=zh-CN">Letian Wang</a><sup>1,2</sup>,</span>
@@ -64,7 +64,7 @@
               <span class="author-block">
                 <a href="https://scholar.google.com/citations?user=4xwyGM8AAAAJ&hl=en">Cunjun Yu</a><sup>1,4</sup>,</span>
               <span class="author-block">
-                <a href="https://www.borisivanovic.com/">Boris Ivanovic</a><sup>1</sup>,</span>
+                <a href="https://www.borisivanovic.com/">Boris Ivanovic</a><sup>1</sup>,</span><br>
               <span class="author-block">
                 <a href="https://scholar.google.com.hk/citations?hl=zh-CN&user=jY_Bcd8AAAAJ&view_op=list_works&sortby=pubdate">Steven Waslander</a><sup>2</sup>,</span>
               <span class="author-block">
@@ -92,19 +92,28 @@
                 <a href="https://distillnerf.github.io/"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                      <i class="ai ai-arxiv"></i>
+                      <i class="fas fa-file-pdf"></i>
                   </span>
-                  <span>arXiv</span>
+                  <span>Paper</span>
                 </a>
               </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/google/nerfies"
+                <a href="https://distillnerf.github.io/"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
                   <span>Code (coming soon)</span>
+                  </a>
+              </span>
+                <!-- Video Link. -->
+                <span class="link-block">
+                  <a href="https://distillnerf.github.io/" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                    </span>
+                    <span>Video</span>
                   </a>
             </div>
 
@@ -120,11 +129,11 @@
     <!-- Concurrent Work. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Method Overview</h2>
+        <h2 class="title is-3" style="color: #85B737;">Method Overview</h2>
         <div class="content has-text-justified">
           <img src="./static/images/overview.png">
 
-          <p><strong>DistillNeRF is a generalizable model for 3D scene representation, self-supervised by natural sensor streams along with distillation from offline NeRFs and vision foundation models. It supports rendering RGB, depth, and foundation feature images, without test-time per-scene optimization, and enables zero-shot 3D semantic occupancy prediction and open-vocabulary text queries.</p>
+          <p><strong>DistillNeRF is a generalizable model for 3D scene representation, self-supervised by natural sensor streams along with distillation from offline NeRFs and vision foundation models. It supports rendering RGB, depth, and foundation feature images, without test-time per-scene optimization, and enables downstream tasks such as zero-shot 3D semantic occupancy prediction and open-vocabulary text queries.</p>
 
         </div>
       </div>
