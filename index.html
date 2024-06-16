@@ -12,6 +12,11 @@
         white-space: nowrap;
     }
   </style>
+  <style>
+    .highlight {
+        color: #85B737; /* Replace with the desired color */
+    }
+  </style>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -53,7 +58,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">DistillNeRF: Perceiving 3D Scenes from Single-Glance Images by <br> Distilling Neural Fields and Foundation Model Features</h1>
+          <h1 class="title is-1 publication-title"> <span class="highlight">DistillNeRF</span>: Perceiving 3D Scenes from Single-Glance Images by <br> Distilling Neural Fields and Foundation Model Features</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
                 <a href="https://scholar.google.com.hk/citations?user=HEzCWisAAAAJ&hl=zh-CN">Letian Wang</a><sup>1,2</sup>,</span>
@@ -129,7 +134,6 @@
     <!-- Concurrent Work. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3" style="color: #85B737;">Method Overview</h2>
         <div class="content has-text-justified">
           <img src="./static/images/overview.png">
 
@@ -146,13 +150,17 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
+      <h2 class="title is-3" style="color: #85B737;">Capabilities</h2>
       <video id="teaser" autoplay muted loop playsinline height="100%">
         <source src="./static/videos/ours.mov"
                 type="video/quicktime">
       </video>
-      <h2 class="subtitle has-text-centered">
+      <p><strong>
         Given single-frame multi-view cameras as input and without test-time per-scene optimization, DistillNeRF can reconstruct RGB images (row 2), estimate depth (row 3), render foundation model features (rows 4, 5) which enables open-vocabulary text queries (rows 6, 7, 8), and predict binary and semantic occupancy in zero shot (rows 9, 10).
-      </h2>
+      </strong>
+      <!-- <h2 class="subtitle has-text-centered">
+        Given single-frame multi-view cameras as input and without test-time per-scene optimization, DistillNeRF can reconstruct RGB images (row 2), estimate depth (row 3), render foundation model features (rows 4, 5) which enables open-vocabulary text queries (rows 6, 7, 8), and predict binary and semantic occupancy in zero shot (rows 9, 10).
+      </h2> -->
     </div>
   </div>
 </section>
@@ -175,7 +183,7 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/compare_sota.mp4"
+        <source src="./static/videos/compare_sota.mov"
                 type="video/quicktime">
       </video>
       <h2 class="subtitle has-text-centered">
@@ -184,6 +192,21 @@
     </div>
   </div>
 </section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/data.mp4"
+                type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Our generalizable DistillNerf is on par with SOTA offline per-scene optimized NeRF method (EmerNerf), and significantly outperforms SOTA generalizable methods (UniPAD and SelfOcc).
+      </h2>
+    </div>
+  </div>
+</section>
+
 <!-- 
 
 <section class="hero teaser">
