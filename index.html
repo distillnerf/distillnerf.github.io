@@ -4,9 +4,14 @@
   <meta charset="utf-8">
   <meta name="description"
         content="DistillNeRF: Perceiving 3D Scenes from Single-Glance Images by Distilling Neural Fields and Foundation Model Features.">
-  <meta name="keywords" content="DistillNeRF, generalizable NeRF, driving scenes, foundation model">
+  <meta name="keywords" content="DistillNeRF, generalizable NeRF, autonomous driving, foundation model">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>DistillNeRF: Perceiving 3D Scenes from Single-Glance Images by Distilling Neural Fields and Foundation Model Features</title>
+  <style>
+    .title {
+        white-space: nowrap;
+    }
+  </style>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -48,18 +53,18 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">DistillNeRF: Perceiving 3D Scenes from Single-Glance Images <br>by Distilling Neural Fields and Foundation Model Features</h1>
+          <h1 class="title is-1 publication-title">DistillNeRF: Perceiving 3D Scenes from Single-Glance Images by Distilling Neural Fields and Foundation Model Features</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
                 <a href="https://scholar.google.com.hk/citations?user=HEzCWisAAAAJ&hl=zh-CN">Letian Wang</a><sup>1,2</sup>,</span>
               <span class="author-block">
-                <a href="https://seung-kim.github.io/seungkim/">Seung Wook Kim</a><sup>1</sup>>,</span>
+                <a href="https://seung-kim.github.io/seungkim/">Seung Wook Kim</a><sup>1</sup>,</span>
               <span class="author-block">
                 <a href="https://jiawei-yang.github.io/">Jiawei Yang</a><sup>3</sup>,</span>
               <span class="author-block">
                 <a href="https://scholar.google.com/citations?user=4xwyGM8AAAAJ&hl=en">Cunjun Yu</a><sup>1,4</sup>,</span>
               <span class="author-block">
-                <a href="https://www.borisivanovic.com/">Boris Ivanovic</a><sup>2</sup>,</span>
+                <a href="https://www.borisivanovic.com/">Boris Ivanovic</a><sup>1</sup>,</span>
               <span class="author-block">
                 <a href="https://scholar.google.com.hk/citations?hl=zh-CN&user=jY_Bcd8AAAAJ&view_op=list_works&sortby=pubdate">Steven Waslander</a><sup>2</sup>,</span>
               <span class="author-block">
@@ -110,6 +115,25 @@
   </div>
 </section>
 
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Concurrent Work. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Method Overview</h2>
+        <div class="content has-text-justified">
+          <img src="./static/images/overview.png">
+
+          <p><strong>DistillNeRF is a generalizable model for 3D scene representation, self-supervised by natural sensor streams along with distillation from offline NeRFs and vision foundation models. It supports rendering RGB, depth, and foundation feature images, without test-time per-scene optimization, and enables zero-shot 3D semantic occupancy prediction and open-vocabulary text queries.</p>
+
+        </div>
+      </div>
+    </div>
+    <!--/ Concurrent Work. -->
+
+  </div>
+</section>
+
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
@@ -118,9 +142,7 @@
                 type="video/quicktime">
       </video>
       <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
+        Given single-frame multi-view cameras as input and without test-time per-scene optimization, DistillNeRF can reconstruct RGB images (row 2), estimate depth (row 3), render foundation model features (rows 4, 5) which enables open-vocabulary text queries (rows 6, 7, 8), and predict binary and semantic occupancy in zero shot (rows 9, 10).
       </h2>
     </div>
   </div>
@@ -134,9 +156,7 @@
                 type="video/quicktime">
       </video>
       <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
+        Given single-frame multi-view cameras as input and without test-time per-scene optimization, we can synthesize novel views.
       </h2>
     </div>
   </div>
@@ -150,9 +170,7 @@
                 type="video/quicktime">
       </video>
       <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
+        Our generalizable DistillNerf is on par with SOTA offline per-scene optimized NeRF method (EmerNerf), and significantly outperforms SOTA generalizable methods (UniPAD and SelfOcc).
       </h2>
     </div>
   </div>
