@@ -247,14 +247,19 @@
     </div>
 
 
-    <div class="columns is-centered has-text-centered">
+    <p><strong>Comparing to other online NeRFs: UniPAD generate blurry RGB reconstruction and shows strong LiDAR-scanning patterns in the rendered depth. SelfOcc generates gray images and inconsistent depth prediction in the high region of the image.</p>
+    <div class="hero-body">
+      <img src="./static/images/online_nerf_compare.png">
+    </div>
+
+    <!-- <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
         <div class="content has-text-justified">
           <p><strong>Comparing to other online NeRFs: UniPAD generate blurry RGB reconstruction and shows strong LiDAR-scanning patterns in the rendered depth. SelfOcc generates gray images and inconsistent depth prediction in the high region of the image.</p>
           <img src="./static/images/online_nerf_compare.png">
         </div>
       </div>
-    </div>
+    </div> -->
     
   </div>
 </section>
@@ -280,11 +285,11 @@
   <div class="container is-max-desktop">
     <h2 class="title is-3" style="color: #85B737;">Ablation Studies</h2>
     <p><strong>
-      Given single-frame multi-view cameras as input and without test-time per-scene optimization, DistillNeRF can reconstruct RGB images (row 2), estimate depth (row 3), render foundation model features (rows 4, 5) which enables open-vocabulary text queries (rows 6, 7, 8), and predict binary and semantic occupancy in zero shot (rows 9, 10).
+      <!-- Given single-frame multi-view cameras as input and without test-time per-scene optimization, DistillNeRF can reconstruct RGB images (row 2), estimate depth (row 3), render foundation model features (rows 4, 5) which enables open-vocabulary text queries (rows 6, 7, 8), and predict binary and semantic occupancy in zero shot (rows 9, 10). -->
+      <p><strong>When removing Distillation from offline NeRFs, we observe downgraded depth prediction accuracy especially in the high region of the image. When removing the parameterized space, the model is only able to predict depth in the limited range.</p>
     </strong></p>
     <div class="hero-body">
       <img src="./static/images/ablation.png">
-      <p><strong>When removing Distillation from offline NeRFs, we observe downgraded depth prediction accuracy especially in the high region of the image. When removing the parameterized space, the model is only able to predict depth in the limited range.</p>
       
     </div>
   </div>
