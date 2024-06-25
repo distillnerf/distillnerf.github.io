@@ -214,13 +214,28 @@
                 type="video/mp4">
       </video>
     </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3" style="color: #85B737;">Comparisons</h2>
+    <p><strong>
+      Our generalizable DistillNerf is on par with SOTA offline per-scene optimized NeRF method (EmerNerf), and significantly outperforms SOTA generalizable methods (UniPAD and SelfOcc).
+    <p>
+    <div class="hero-body">
+      <video id="teaser" autoplay muted loop playsinline width="105%">
+        <source src="./static/videos/compare_sota.mp4"
+                type="video/mp4">
+      </video>
+    </div>
 
     <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
         <div class="content has-text-justified">
+          <p><strong>While we distill offline per-scene optimized NeRF (e.g. EmerNeRF) into DistillNeRF, we observe qualitative phenomenon where students (DistillNeRF) surpassing the teacher (EmerNeRF), as DistillNeRF is more robust to sensor calibration noises and able to generate smoother predictions.</p>
           <img src="./static/images/emernerf_compare.pdf">
           
-          <p><strong>DistillNeRF is a generalizable model for 3D scene representation, self-supervised by natural sensor streams along with distillation from offline NeRFs and vision foundation models. It supports rendering RGB, depth, and foundation feature images, without test-time per-scene optimization, and enables downstream tasks such as zero-shot 3D semantic occupancy prediction and open-vocabulary text queries.</p>
 
         </div>
       </div>
@@ -230,10 +245,8 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
         <div class="content has-text-justified">
-          <img src="./static/images/online_nerf_compare.pdf">
-          
           <p><strong>DistillNeRF is a generalizable model for 3D scene representation, self-supervised by natural sensor streams along with distillation from offline NeRFs and vision foundation models. It supports rendering RGB, depth, and foundation feature images, without test-time per-scene optimization, and enables downstream tasks such as zero-shot 3D semantic occupancy prediction and open-vocabulary text queries.</p>
-
+          <img src="./static/images/online_nerf_compare.pdf">
         </div>
       </div>
     </div>
@@ -248,26 +261,10 @@
         </div>
       </div>
     </div>
-
-
+    
   </div>
 </section>
 
-
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3" style="color: #85B737;">Comparisons</h2>
-    <p><strong>
-      Our generalizable DistillNerf is on par with SOTA offline per-scene optimized NeRF method (EmerNerf), and significantly outperforms SOTA generalizable methods (UniPAD and SelfOcc).
-    <p>
-    <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline width="105%">
-        <source src="./static/videos/compare_sota.mp4"
-                type="video/mp4">
-      </video>
-    </div>
-  </div>
-</section>
 
 
 <!-- <section class="section" id="BibTeX">
