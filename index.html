@@ -224,6 +224,22 @@
 
 <section class="hero teaser">
   <div class="container is-max-desktop">
+    <h2 class="title is-3" style="color: #85B737;">Generalizability</h2>
+    <p><strong>
+      Trained on the nuScenes dataset, our model demonstrates strong zero-shot transfer performance on the unseen Waymo dataset, achieving decent reconstruction quality. This quality can be further enhanced by applying simple color alterations to account for camera-specific coloring discrepancies. After fine-tuning, our model surpasses the offline per-scene optimized EmerNeRF, achieving higher PSNR (29.84 vs. 28.87) and SSIM (0.911 vs. 0.814).
+    </strong></p>
+    <div class="hero-body">
+      <video id="teaser" autoplay muted loop playsinline width="105%">
+        <source src="./static/videos/waymo_convert_2scene.mp4"
+                type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
     <h2 class="title is-3" style="color: #85B737;">Comparisons</h2>
     <p><strong>
       Our generalizable DistillNerf is on par with SOTA offline per-scene optimized NeRF method (EmerNerf), and significantly outperforms SOTA generalizable methods (UniPAD and SelfOcc).
@@ -315,20 +331,6 @@
 </section>
 
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3" style="color: #85B737;">Generalizability</h2>
-    <p><strong>
-      Trained on the nuScenes dataset, our model demonstrates strong zero-shot transfer performance on the unseen Waymo dataset, achieving decent reconstruction quality. This quality can be further enhanced by applying simple color alterations to account for camera-specific coloring discrepancies. After fine-tuning, our model surpasses the offline per-scene optimized EmerNeRF, achieving higher PSNR (29.84 vs. 28.87) and SSIM (0.911 vs. 0.814).
-    </strong></p>
-    <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline width="105%">
-        <source src="./static/videos/waymo_convert.mp4"
-                type="video/mp4">
-      </video>
-    </div>
-  </div>
-</section>
 
 
 <!-- <section class="hero teaser">
