@@ -315,6 +315,36 @@
 </section>
 
 
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3" style="color: #85B737;">Generalizability</h2>
+    <p><strong>
+      Trained on the nuScenes dataset, our model demonstrates strong zero-shot transfer performance on the unseen Waymo dataset, achieving decent reconstruction quality. This quality can be further enhanced by applying simple color alterations to account for camera-specific coloring discrepancies. After fine-tuning, our model surpasses the offline per-scene optimized EmerNeRF, achieving higher PSNR (29.84 vs. 28.87) and SSIM (0.911 vs. 0.814).
+    </strong></p>
+    <div class="hero-body">
+      <video id="teaser" autoplay muted loop playsinline width="105%">
+        <source src="./static/videos/waymo.mp4"
+                type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+
+
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3" style="color: #85B737;">Generalizability</h2>
+    <p><strong>
+      Given single-frame multi-view cameras as input and without test-time per-scene optimization, DistillNeRF can reconstruct RGB images (row 2), estimate depth (row 3), render foundation model features (rows 4, 5) which enables open-vocabulary text queries (rows 6, 7, 8), and predict binary and semantic occupancy in zero shot (rows 9, 10). -->
+      <!-- <p><strong>Trained on the nuScenes dataset, our model demonstrates strong zero-shot transfer performance on the unseen Waymo dataset, achieving decent reconstruction quality. This quality can be further enhanced by applying simple color alterations to account for camera-specific color discrepancies. After fine-tuning, our model surpasses the offline per-scene optimized EmerNeRF, achieving higher PSNR (29.84 vs. 28.87) and SSIM (0.9115 vs. 0.814). -->
+      <!-- </strong></p> -->
+    <!-- <div class="hero-body"> -->
+      <!-- <img src="./static/images/ablation.png"> -->
+      <!--  -->
+    <!-- </div> -->
+  <!-- </div> -->
+<!-- </section> -->
+
 
 <!-- <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
